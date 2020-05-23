@@ -1,0 +1,36 @@
+.smm-card-today {
+  width: 100%;
+  background-color: $LightGrayish;
+  border-radius: 0.8rem;
+  padding: 2rem;
+}
+
+.today-page-block {
+  @include clearfix;
+
+  &:not(:last-child) {
+    padding-bottom: 2rem;
+  }
+
+  .follow-count {
+    font-size: 4rem;
+    font-weight: 600;
+    float: left;
+  }
+
+  .platform-icon {
+    float: right;
+  }
+
+  .today-count {
+    color: $LimeGreen;
+    font-size: 1.4rem;
+    font-weight: 700;
+    float: right;
+    margin-top: 1.5rem;
+  }
+
+  .heading-tertiary {
+    float: left;
+  }
+}

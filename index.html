@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./scss/index.css" />
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <title>Frontend Mentor | Social Media Dashboard Challenge</title>
+  </head>
+  <body>
+    <main>
+      <!-- Header -->
+      <div class="row u-pd-medium">
+        <div class="col-1-of-2">
+          <h1 class="u-mb-1">Social Media Dashboard</h1>
+          <h3 class="heading-tertiary">Total Followers: 23,004</h3>
+        </div>
+        <div class="col-1-of-2">
+          <form action="#">
+            <div class="switch">
+              <input
+                id="switch-1"
+                onclick="switchdark()"
+                type="checkbox"
+                class="switch-input"
+              />
+              <label for="switch-1" class="switch-label">Switch</label>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- SMM Following Count -->
+      <div class="row">
+        <div class="col-1-of-4">
+          <div class="smm-card smm-card__facebook u-pd-medium">
+            <div class="platform u-mb-2">
+              <img
+                src="./images/icon-facebook.svg"
+                alt="facebook"
+                class="platform-icon"
+              />
+              <p class="platform-username">@usman</p>
+            </div>
+
+            <p class="follow-count u-mb-1">1987</p>
+            <p class="count-label u-mb-2">Followers</p>
+            <p class="today-count">
+              <span
+                ><ion-icon
+                  name="caret-up-outline"
+                  class="caret"
+                ></ion-icon></span
+              >12 Today
+            </p>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="smm-card smm-card__twitter u-pd-medium">
+            <div class="platform u-mb-2">
+              <img
+                src="./images/icon-twitter.svg"
+                alt="facebook"
+                class="platform-icon"
+              />
+              <p class="platform-username">@usman</p>
+            </div>
+
+            <p class="follow-count u-mb-1">1044</p>
+            <p class="count-label u-mb-2">Followers</p>
+            <p class="today-count">
+              <span
+                ><ion-icon
+                  name="caret-up-outline"
+                  class="caret"
+                ></ion-icon></span
+              >10 Today
+            </p>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="smm-card smm-card__instagram u-pd-medium">
+            <div class="platform u-mb-2">
+              <img
+                src="./images/icon-instagram.svg"
+                alt="facebook"
+                class="platform-icon"
+              />
+              <p class="platform-username">@usman</p>
+            </div>
+
+            <p class="follow-count u-mb-1">5000</p>
+            <p class="count-label u-mb-2">Followers</p>
+            <p class="today-count">
+              <span
+                ><ion-icon
+                  name="caret-up-outline"
+                  class="caret"
+                ></ion-icon></span
+              >22 Today
+            </p>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="smm-card smm-card__youtube u-pd-medium">
+            <div class="platform u-mb-2">
+              <img
+                src="./images/icon-youtube.svg"
+                alt="facebook"
+                class="platform-icon"
+              />
+              <p class="platform-username">@js_ninja</p>
+            </div>
+
+            <p class="follow-count u-mb-1">11k</p>
+            <p class="count-label u-mb-2">Subscribers</p>
+            <p class="today-count">
+              <span
+                ><ion-icon
+                  name="caret-up-outline"
+                  class="caret"
+                ></ion-icon></span
+              >15 Today
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row u-mb-2">
+        <h3 class="heading-secondary">Overview - Today</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">
+          <div class="smm-card-today">
+            <div class="today-page-block u-mb-1">
+              <h3 class="heading-tertiary">Page Views</h3>
+              <img
+                src="./images/icon-facebook.svg"
+                alt="facebook"
+                class="platform-icon"
+              />
+            </div>
+
+            <div class="today-page-block">
+              <p class="follow-count">11k</p>
+              <p class="today-count">
+                <span
+                  ><ion-icon
+                    name="caret-up-outline"
+                    class="caret"
+                  ></ion-icon></span
+                >15 Today
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="smm-card-today">
+            <div class="today-page-block u-mb-1">
+              <h3 class="heading-tertiary">Likes</h3>
+              <img
+                src="./images/icon-facebook.svg"
+                alt="facebook"
+                class="platform-icon"
+              />
+            </div>
+
+            <div class="today-page-block">
+              <p class="follow-count">12k</p>
+              <p class="today-count">
+                <span
+                  ><ion-icon
+                    name="caret-up-outline"
+                    class="caret"
+                  ></ion-icon></span
+                >15 Today
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="smm-card-today">
+            <div class="today-page-block u-mb-1">
+              <h3 class="heading-tertiary">Likes</h3>
+              <img
+                src="./images/icon-instagram.svg"
+                alt="facebook"
+                class="platform-icon"
+              />
+            </div>
+
+            <div class="today-page-block">
+              <p class="follow-count">11k</p>
+              <p class="today-count">
+                <span
+                  ><ion-icon
+                    name="caret-up-outline"
+                    class="caret"
+                  ></ion-icon></span
+                >15 Today
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="smm-card-today">
+            <div class="today-page-block u-mb-1">
+              <h3 class="heading-tertiary">Profile Views</h3>
+              <img
+                src="./images/icon-facebook.svg"
+                alt="facebook"
+                class="platform-icon"
+              />
+            </div>
+
+            <div class="today-page-block">
+              <p class="follow-count">3k</p>
+              <p class="today-count">
+                <span
+                  ><ion-icon
+                    name="caret-up-outline"
+                    class="caret"
+                  ></ion-icon></span
+                >15 Today
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-4">
+          <div class="smm-card-today">
+            <div class="today-page-block u-mb-1">
+              <h3 class="heading-tertiary">Retweets</h3>
+              <img
+                src="./images/icon-twitter.svg"
+                alt="facebook"
+                class="platform-icon"
+              />
+            </div>
+
+            <div class="today-page-block">
+              <p class="follow-count">80</p>
+              <p class="today-count">
+                <span
+                  ><ion-icon
+                    name="caret-up-outline"
+                    class="caret"
+                  ></ion-icon></span
+                >70 Today
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="smm-card-today">
+            <div class="today-page-block u-mb-1">
+              <h3 class="heading-tertiary">Likes</h3>
+              <img
+                src="./images/icon-twitter.svg"
+                alt="facebook"
+                class="platform-icon"
+              />
+            </div>
+
+            <div class="today-page-block">
+              <p class="follow-count">150</p>
+              <p class="today-count">
+                <span
+                  ><ion-icon
+                    name="caret-up-outline"
+                    class="caret"
+                  ></ion-icon></span
+                >50 Today
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="smm-card-today">
+            <div class="today-page-block u-mb-1">
+              <h3 class="heading-tertiary">Subscribers</h3>
+              <img
+                src="./images/icon-youtube.svg"
+                alt="facebook"
+                class="platform-icon"
+              />
+            </div>
+
+            <div class="today-page-block">
+              <p class="follow-count">100</p>
+              <p class="today-count">
+                <span
+                  ><ion-icon
+                    name="caret-up-outline"
+                    class="caret"
+                  ></ion-icon></span
+                >22 Today
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="smm-card-today">
+            <div class="today-page-block u-mb-1">
+              <h3 class="heading-tertiary">Total Views</h3>
+              <img
+                src="./images/icon-youtube.svg"
+                alt="facebook"
+                class="platform-icon"
+              />
+            </div>
+
+            <div class="today-page-block">
+              <p class="follow-count">3k</p>
+              <p class="today-count">
+                <span
+                  ><ion-icon
+                    name="caret-up-outline"
+                    class="caret"
+                  ></ion-icon></span
+                >18 Today
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Muhammad Usman Iqbal</a>.
+    </div> -->
+    <script src="./js/themeswitch.js"></script>
+  </body>
+</html>

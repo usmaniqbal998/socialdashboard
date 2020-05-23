@@ -1,0 +1,73 @@
+.smm-card {
+  width: 100%;
+  background-color: $LightGrayish;
+  border-radius: 0.8rem;
+  text-align: center;
+  position: relative;
+
+  &__facebook {
+    border-top: 0.5rem solid $Facebook;
+  }
+
+  &__twitter {
+    border-top: 0.5rem solid $Twitter;
+  }
+
+  &__youtube {
+    border-top: 0.5rem solid $YouTube;
+  }
+
+  &__instagram {
+    margin-top: 0.5rem;
+  }
+
+  &__instagram::before {
+    // border-top: 0.5rem solid transparent;
+    // border-image: $Instagram;
+    // border-image-slice: 1;
+    border-radius: 0.8rem;
+    content: "";
+    background-image: $Instagram;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: -0.5rem;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .follow-count {
+    font-size: 6rem;
+    font-weight: 700;
+  }
+  .count-label {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 1.4rem;
+    color: $DarkGrayish;
+  }
+
+  .today-count {
+    color: $LimeGreen;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+}
+
+.platform {
+  text-align: center;
+  &-icon {
+    margin-right: 0.2rem;
+    vertical-align: middle;
+    height: 2.4rem;
+  }
+
+  &-username {
+    display: inline;
+    vertical-align: middle;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $DarkGrayish;
+  }
+}

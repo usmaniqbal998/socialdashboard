@@ -1,0 +1,47 @@
+.row {
+  width: 130rem;
+  margin: 0 auto;
+  @include clearfix;
+
+  &:not(:last-child) {
+    margin-bottom: $GutterVertical;
+  }
+
+  [class^="col-"] {
+    float: left;
+    &:not(:last-child) {
+      margin-right: $GutterHorizontal;
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$GutterHorizontal}) / 2);
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - #{$GutterHorizontal}* 2) / 3);
+  }
+
+  .col-1-of-4 {
+    width: calc((100% - #{$GutterHorizontal}* 3) / 4);
+  }
+
+  //   (2 * ((100% - 2 * #{$GutterHorizontal}) / 3))
+  .col-2-of-3 {
+    width: calc(
+      2 * ((100% - 2 * #{$GutterHorizontal}) / 3) + #{$GutterHorizontal}
+    );
+  }
+
+  .col-2-of-4 {
+    width: calc(
+      2 * ((100% - 3 * #{$GutterHorizontal}) / 4) + #{$GutterHorizontal}
+    );
+  }
+
+  .col-3-of-4 {
+    width: calc(
+      3 * ((100% - 3 * #{$GutterHorizontal}) / 4) + 2 * #{$GutterHorizontal}
+    );
+  }
+}
